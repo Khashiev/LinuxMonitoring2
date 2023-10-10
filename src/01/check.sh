@@ -15,7 +15,7 @@ function check_input {
         error=5
     elif ! [[ $5 =~ ^([a-zA-Z+]{1,7})\.([a-zA-Z]{1,3})$ ]]; then
         error=6
-    elif [[ $6 -ge 100 ]]; then
+    elif [[ $(echo "$6" | awk -F"kb" '{print $1}') -gt 100 ]]; then
         error=7
     fi
 }
