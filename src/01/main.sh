@@ -1,12 +1,12 @@
 #!/bin/bash
 
 . ./check.sh
-. ./create.sh
 
 check_input $@
 
 if [[ error -eq 0 ]]; then
-    create_dirs $@
+    chmod +x create_files.sh
+    ./create_files.sh $@
 else
     print_error
 fi
