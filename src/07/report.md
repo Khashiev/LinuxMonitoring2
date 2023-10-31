@@ -2,16 +2,22 @@
 
 ### 1. Установить и настроить Prometheus и Grafana на виртуальную машину
 
-``sudo apt install prometheus`` \
-``sudo systemctl start prometheus`` \
+``sudo apt install prometheus`` 
+
+``sudo systemctl start prometheus`` 
+
 ``sudo systemctl status prometheus`` 
 
 ![image](./imgs/1.1.png)
 
-``wget https://dl.grafana.com/oss/release/grafana_9.2.4_amd64.deb`` \
-``sudo apt install libfontconfig`` \
-``sudo dpkg -i grafana_9.2.4_amd64.deb`` \
-``sudo systemctl enable grafana-server`` \
+``wget https://dl.grafana.com/oss/release/grafana_9.2.4_amd64.deb`` 
+
+``sudo apt install libfontconfig`` 
+
+``sudo dpkg -i grafana_9.2.4_amd64.deb`` 
+
+``sudo systemctl enable grafana-server`` 
+
 ``sudo systemctl start grafana-server``
 
 ![image](./imgs/1.2.png)
