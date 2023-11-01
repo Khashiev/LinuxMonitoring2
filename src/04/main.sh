@@ -18,7 +18,7 @@ if [[ error -eq 0 ]]; then
             file_time=$(get_time)
             url=$(get_url)
             agent=$(get_agent)
-            echo "$ip - - [${file_date}:${file_time} +0400] \"$method ${url}\" $status - \"-\" \"${agent}\"" >>"${i}_tmp.log"
+            echo "$ip - - [${file_date}:${file_time} +0300] \"$method ${url}\" $status - \"-\" \"${agent}\"" >>"${i}_tmp.log"
         done
     done
     for ((i = 1; i < 6; i++)); do
